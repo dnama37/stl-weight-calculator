@@ -172,7 +172,7 @@
             scene.add(directionalLight);
 
             // OrbitControls (for pan, rotate, zoom)
-            controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls = new THREE.OrbitControls(camera, viewerContainer);
             controls.enableDamping = true; // Smooth camera movement
             controls.dampingFactor = 0.25;
             controls.screenSpacePanning = true; // Pan in screen space
@@ -357,3 +357,4 @@
     </script>
 </body>
 </html>
+
